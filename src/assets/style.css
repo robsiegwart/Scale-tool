@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.input_field {
+    @apply appearance-none;
+    @apply block;
+    @apply bg-transparent;
+    @apply border-b;
+    @apply border-gray-400;
+    @apply py-2;
+    @apply px-4;
+    @apply w-full;
+}
+
+.input_field:focus, .input_description:focus {
+    @apply bg-gray-200;
+    @apply outline-none;
+}
+
+.input_description {
+    @apply appearance-none;
+    @apply block;
+    @apply bg-transparent;
+    @apply border-b;
+    @apply border-gray-400;
+    @apply px-4;
+    @apply w-full;
+    @apply mb-2;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+.output {
+    @apply py-2;
+    @apply px-4;
+    @apply text-center;
+}
+
+.delete_btn {
+    @apply px-2;
+    @apply rounded;
+    @apply text-center;
+}
+
+.delete_btn:hover {
+    @apply bg-red-600;
+    @apply text-white;
+}
