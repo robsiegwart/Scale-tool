@@ -1,7 +1,7 @@
 <template>
     <div class="relative pr-10">
       <button class="delete_btn delete_btn_small" v-show="delete_item_true" @click="$emit('delete_scale_item',id)">x</button>
-      <div class="wrapper">
+      <div class="scale_tool_wrapper">
         <input v-model="measurement" placeholder="Measurement" class="input_field" />
         <span class="mx-2">{{ measured_unit || '' }}</span>
         <span class="mx-2">=</span>
@@ -41,7 +41,7 @@ export default {
 </script>
 
 <style>
-.wrapper {
+.scale_tool_wrapper {
   display: grid;
   grid-template-columns: 3fr 0.2fr 0.2fr 1.5fr 0.2fr;
   align-items: center;
